@@ -1,0 +1,26 @@
+{
+  "1.21.5": {
+    "derived_mc_version": "1.21.5",
+    "java_picked": "C:\\Users\\LiXiaoHao\\AppData\\Roaming\\.minecraft\\runtime\\java-runtime-delta\\bin\\javaw.exe",
+    "java_major": 21,
+    "mainClass": "net.minecraft.client.main.Main",
+    "natives_dir": "F:\\.minecraft\\versions\\1.21.5\\1.21.5-natives",
+    "classpath_entries": 85,
+    "total_args": 54,
+    "missing_libs": 0,
+    "workdir": "F:\\.minecraft",
+    "java_is_arg0": true
+  },
+  "fps1.20.1": {
+    "derived_mc_version": "1.20.1",
+    "java_picked": "C:\\Users\\LiXiaoHao\\AppData\\Roaming\\.minecraft\\runtime\\java-runtime-gamma-snapshot\\bin\\javaw.exe",
+    "java_major": 17,
+    "mainClass": "net.fabricmc.loader.impl.launch.knot.KnotClient",
+    "natives_dir": "F:\\.minecraft\\versions\\fps1.20.1\\fps1.20.1-natives",
+    "classpath_entries": 73,
+    "total_args": 55,
+    "missing_libs": 0,
+    "workdir": "F:\\.minecraft",
+    "java_is_arg0": true
+  }
+}

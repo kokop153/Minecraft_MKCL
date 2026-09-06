@@ -1,0 +1,23 @@
+{
+  "1": {
+    "workdir": "F:\\.minecraft\\versions\\fps1.20.1\\multi-1",
+    "gameDir_arg": "F:\\.minecraft\\versions\\fps1.20.1\\multi-1",
+    "username": "kokop",
+    "natives": "F:\\.minecraft\\versions\\fps1.20.1\\multi-1\\natives",
+    "missing": 0
+  },
+  "2": {
+    "workdir": "F:\\.minecraft\\versions\\fps1.20.1\\multi-2",
+    "gameDir_arg": "F:\\.minecraft\\versions\\fps1.20.1\\multi-2",
+    "username": "kokop2",
+    "natives": "F:\\.minecraft\\versions\\fps1.20.1\\multi-2\\natives",
+    "missing": 0
+  },
+  "3": {
+    "workdir": "F:\\.minecraft\\versions\\fps1.20.1\\multi-3",
+    "gameDir_arg": "F:\\.minecraft\\versions\\fps1.20.1\\multi-3",
+    "username": "kokop3",
+    "natives": "F:\\.minecraft\\versions\\fps1.20.1\\multi-3\\natives",
+    "missing": 0
+  }
+}

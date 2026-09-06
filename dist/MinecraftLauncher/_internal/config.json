@@ -1,0 +1,18 @@
+{
+  "java_path": "",
+  "game_dir": "",
+  "current_version": "",
+  "memory_gb": 4,
+  "jvm_extra_args": "",
+  "theme_color": "#3B82F6",
+  "download_source": "bmclapi",
+  "window": {
+    "width": 980,
+    "height": 640,
+    "maximized": false,
+    "x": 469,
+    "y": 165
+  },
+  "per_version": {},
+  "auto_isolate": true
+}

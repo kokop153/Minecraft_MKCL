@@ -1,0 +1,1913 @@
+(['C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\main.py'],
+ ['C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher'],
+ [],
+ [('C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
+   -1000),
+  ('C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\_pyinstaller_hooks_contrib',
+   -1000)],
+ {},
+ [],
+ [],
+ False,
+ {},
+ 0,
+ [],
+ [],
+ '3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit '
+ '(AMD64)]',
+ [('pyi_rth_inspect',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt5',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
+   'PYSOURCE'),
+  ('main',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\main.py',
+   'PYSOURCE')],
+ [('_pyi_rth_utils.qt',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyInstaller\\fake-modules\\_pyi_rth_utils\\qt.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\__init__.pyc',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\_bootstrap_external.pyc',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\__init__.pyc',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\csv.pyc',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\_adapters.pyc',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\_text.pyc',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\message.pyc',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\policy.pyc',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\contentmanager.pyc',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\quoprimime.pyc',
+   'PYMODULE'),
+  ('string',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\string.pyc',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\headerregistry.pyc',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\_header_value_parser.pyc',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\urllib\\__init__.pyc',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\generator.pyc',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\copy.pyc',
+   'PYMODULE'),
+  ('random',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\random.pyc',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\argparse.pyc',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\shutil.pyc',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\tarfile.pyc',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\gzip.pyc',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_compression.pyc',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\struct.pyc',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\lzma.pyc',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\bz2.pyc',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\fnmatch.pyc',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\gettext.pyc',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\statistics.pyc',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\decimal.pyc',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_pydecimal.pyc',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\contextvars.pyc',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\fractions.pyc',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\numbers.pyc',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\hashlib.pyc',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\logging\\__init__.pyc',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\pickle.pyc',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\pprint.pyc',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\dataclasses.pyc',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_compat_pickle.pyc',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\threading.pyc',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_threading_local.pyc',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\bisect.pyc',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_strptime.pyc',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\datetime.pyc',
+   'PYMODULE'),
+  ('_pydatetime',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_pydatetime.pyc',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\calendar.pyc',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\iterators.pyc',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\_encoded_words.pyc',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\base64.pyc',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\getopt.pyc',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\charset.pyc',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\encoders.pyc',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\base64mime.pyc',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\_policybase.pyc',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\header.pyc',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\errors.pyc',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\utils.pyc',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\socket.pyc',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\selectors.pyc',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\_parseaddr.pyc',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\urllib\\parse.pyc',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\ipaddress.pyc',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\quopri.pyc',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\typing.pyc',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\abc.pyc',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\abc.pyc',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\__init__.pyc',
+   'PYMODULE'),
+  ('importlib.resources._functional',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\_functional.pyc',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\_common.pyc',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\_adapters.pyc',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\tempfile.pyc',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\_abc.pyc',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\machinery.pyc',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\contextlib.pyc',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\_itertools.pyc',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\_functools.pyc',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\_collections.pyc',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\metadata\\_meta.pyc',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\textwrap.pyc',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\zipfile\\__init__.pyc',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\py_compile.pyc',
+   'PYMODULE'),
+  ('zipfile._path',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\zipfile\\_path\\__init__.pyc',
+   'PYMODULE'),
+  ('zipfile._path.glob',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\zipfile\\_path\\glob.pyc',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\util.pyc',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\pathlib\\__init__.pyc',
+   'PYMODULE'),
+  ('pathlib._local',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\pathlib\\_local.pyc',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\glob.pyc',
+   'PYMODULE'),
+  ('pathlib._abc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\pathlib\\_abc.pyc',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\inspect.pyc',
+   'PYMODULE'),
+  ('token',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\token.pyc',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\dis.pyc',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\opcode.pyc',
+   'PYMODULE'),
+  ('_opcode_metadata',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_opcode_metadata.pyc',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\ast.pyc',
+   'PYMODULE'),
+  ('email',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\__init__.pyc',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\parser.pyc',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\email\\feedparser.pyc',
+   'PYMODULE'),
+  ('json',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\json\\__init__.pyc',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\json\\encoder.pyc',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\json\\decoder.pyc',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\json\\scanner.pyc',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\__future__.pyc',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\readers.pyc',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\readers.pyc',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\resources\\_itertools.pyc',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\tokenize.pyc',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\importlib\\_bootstrap.pyc',
+   'PYMODULE'),
+  ('_pyi_rth_utils',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyInstaller\\fake-modules\\_pyi_rth_utils\\__init__.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\subprocess.pyc',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\signal.pyc',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\spawn.pyc',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\resource_tracker.pyc',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\util.pyc',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\forkserver.pyc',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\connection.pyc',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\resource_sharer.pyc',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xmlrpc\\client.pyc',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xmlrpc\\__init__.pyc',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\parsers\\expat.pyc',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\parsers\\__init__.pyc',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\__init__.pyc',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\sax\\expatreader.pyc',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\sax\\saxutils.pyc',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\urllib\\request.pyc',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\getpass.pyc',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\ftplib.pyc',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\netrc.pyc',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\mimetypes.pyc',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\http\\cookiejar.pyc',
+   'PYMODULE'),
+  ('http',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\http\\__init__.pyc',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\nturl2path.pyc',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\ssl.pyc',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\urllib\\response.pyc',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\urllib\\error.pyc',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\sax\\__init__.pyc',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\sax\\handler.pyc',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\sax\\_exceptions.pyc',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\xml\\sax\\xmlreader.pyc',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\http\\client.pyc',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\hmac.pyc',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\context.pyc',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\popen_spawn_win32.pyc',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\popen_forkserver.pyc',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\popen_spawn_posix.pyc',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\popen_fork.pyc',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\sharedctypes.pyc',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\heap.pyc',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\ctypes\\__init__.pyc',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\ctypes\\_endian.pyc',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\sysconfig\\__init__.pyc',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_aix_support.pyc',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\pool.pyc',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\dummy\\__init__.pyc',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\dummy\\connection.pyc',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\queue.pyc',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\queues.pyc',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\synchronize.pyc',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\managers.pyc',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\shared_memory.pyc',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\secrets.pyc',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\reduction.pyc',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\process.pyc',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\runpy.pyc',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\pkgutil.pyc',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\zipimport.pyc',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\multiprocessing\\__init__.pyc',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\_py_abc.pyc',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\tracemalloc.pyc',
+   'PYMODULE'),
+  ('_colorize',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_colorize.pyc',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\stringprep.pyc',
+   'PYMODULE'),
+  ('launcher.ui.main_window',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\main_window.py',
+   'PYMODULE'),
+  ('launcher.ui',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\__init__.py',
+   'PYMODULE'),
+  ('launcher',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\__init__.py',
+   'PYMODULE'),
+  ('launcher.meta',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\meta.py',
+   'PYMODULE'),
+  ('launcher.maven',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\maven.py',
+   'PYMODULE'),
+  ('launcher.version_scan',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\version_scan.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\platform.pyc',
+   'PYMODULE'),
+  ('launcher.errors',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\errors.py',
+   'PYMODULE'),
+  ('launcher.accounts',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\accounts.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\uuid.pyc',
+   'PYMODULE'),
+  ('launcher.config',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\config.py',
+   'PYMODULE'),
+  ('launcher.ui.theme',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\theme.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\colorsys.pyc',
+   'PYMODULE'),
+  ('launcher.ui.settings_page',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\settings_page.py',
+   'PYMODULE'),
+  ('launcher.ui.workers',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\workers.py',
+   'PYMODULE'),
+  ('launcher.download',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\download.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\concurrent\\futures\\__init__.pyc',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\concurrent\\futures\\thread.pyc',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\concurrent\\futures\\process.pyc',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\concurrent\\futures\\_base.pyc',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\concurrent\\__init__.pyc',
+   'PYMODULE'),
+  ('launcher.launch',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\launch.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\shlex.pyc',
+   'PYMODULE'),
+  ('launcher.java_utils',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\java_utils.py',
+   'PYMODULE'),
+  ('launcher.ui.process_page',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\process_page.py',
+   'PYMODULE'),
+  ('launcher.ui.downloads_page',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\downloads_page.py',
+   'PYMODULE'),
+  ('launcher.ui.versions_page',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\versions_page.py',
+   'PYMODULE'),
+  ('launcher.ui.home_page',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\ui\\home_page.py',
+   'PYMODULE'),
+  ('PyQt5',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\__init__.py',
+   'PYMODULE'),
+  ('launcher.logsetup',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\launcher\\logsetup.py',
+   'PYMODULE'),
+  ('logging.handlers',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\logging\\handlers.pyc',
+   'PYMODULE'),
+  ('smtplib',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\smtplib.pyc',
+   'PYMODULE')],
+ [('python313.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\styles\\qwindowsvistastyle.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\styles\\qwindowsvistastyle.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libEGL.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libEGL.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qjpeg.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\generic\\qtuiotouchplugin.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\generic\\qtuiotouchplugin.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qminimal.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qtiff.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('_lzma.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_bz2.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_hashlib.pyd',
+   'EXTENSION'),
+  ('select.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\select.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_socket.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_ssl.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_queue.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_wmi.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\_uuid.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtWidgets.pyd',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('PyQt5\\sip.cp313-win_amd64.pyd',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\sip.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtGui.pyd',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\QtGui.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtCore.pyd',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\QtCore.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Gui.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Gui.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Widgets.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Widgets.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Core.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Core.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\MSVCP140.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Svg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Network.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Network.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5DBus.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5DBus.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5WebSockets.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5WebSockets.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Quick.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Quick.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\libffi-8.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python3.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Qml.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Qml.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5QmlModels.dll',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5QmlModels.dll',
+   'BINARY')],
+ [],
+ [],
+ [('PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_cs.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_da.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_da.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_es.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_de.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_it.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_he.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_en.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_cs.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_pl.qm',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\Lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_pl.qm',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\LiXiaoHao\\.openclaw-autoclaw\\workspace\\minecraft-launcher\\build\\MinecraftLauncher\\base_library.zip',
+   'DATA')],
+ [('_collections_abc',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_collections_abc.pyc',
+   'PYMODULE'),
+  ('types',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\types.pyc',
+   'PYMODULE'),
+  ('genericpath',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\genericpath.pyc',
+   'PYMODULE'),
+  ('functools',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\functools.pyc',
+   'PYMODULE'),
+  ('abc',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\abc.pyc',
+   'PYMODULE'),
+  ('warnings',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\warnings.pyc',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\posixpath.pyc',
+   'PYMODULE'),
+  ('weakref',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\weakref.pyc',
+   'PYMODULE'),
+  ('heapq',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\heapq.pyc',
+   'PYMODULE'),
+  ('keyword',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\keyword.pyc',
+   'PYMODULE'),
+  ('collections',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\collections\\__init__.pyc',
+   'PYMODULE'),
+  ('reprlib',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\reprlib.pyc',
+   'PYMODULE'),
+  ('operator',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\operator.pyc',
+   'PYMODULE'),
+  ('traceback',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\traceback.pyc',
+   'PYMODULE'),
+  ('codecs',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\codecs.pyc',
+   'PYMODULE'),
+  ('re._parser',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\re\\_parser.pyc',
+   'PYMODULE'),
+  ('re._constants',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\re\\_constants.pyc',
+   'PYMODULE'),
+  ('re._compiler',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\re\\_compiler.pyc',
+   'PYMODULE'),
+  ('re._casefix',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\re\\_casefix.pyc',
+   'PYMODULE'),
+  ('re',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\re\\__init__.pyc',
+   'PYMODULE'),
+  ('sre_constants',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\sre_constants.pyc',
+   'PYMODULE'),
+  ('stat',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\stat.pyc',
+   'PYMODULE'),
+  ('ntpath',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\ntpath.pyc',
+   'PYMODULE'),
+  ('locale',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\locale.pyc',
+   'PYMODULE'),
+  ('encodings.zlib_codec',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\zlib_codec.pyc',
+   'PYMODULE'),
+  ('encodings.uu_codec',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\uu_codec.pyc',
+   'PYMODULE'),
+  ('encodings.utf_8_sig',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_8_sig.pyc',
+   'PYMODULE'),
+  ('encodings.utf_8',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_8.pyc',
+   'PYMODULE'),
+  ('encodings.utf_7',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_7.pyc',
+   'PYMODULE'),
+  ('encodings.utf_32_le',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_32_le.pyc',
+   'PYMODULE'),
+  ('encodings.utf_32_be',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_32_be.pyc',
+   'PYMODULE'),
+  ('encodings.utf_32',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_32.pyc',
+   'PYMODULE'),
+  ('encodings.utf_16_le',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_16_le.pyc',
+   'PYMODULE'),
+  ('encodings.utf_16_be',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_16_be.pyc',
+   'PYMODULE'),
+  ('encodings.utf_16',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\utf_16.pyc',
+   'PYMODULE'),
+  ('encodings.unicode_escape',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\unicode_escape.pyc',
+   'PYMODULE'),
+  ('encodings.undefined',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\undefined.pyc',
+   'PYMODULE'),
+  ('encodings.tis_620',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\tis_620.pyc',
+   'PYMODULE'),
+  ('encodings.shift_jisx0213',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\shift_jisx0213.pyc',
+   'PYMODULE'),
+  ('encodings.shift_jis_2004',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\shift_jis_2004.pyc',
+   'PYMODULE'),
+  ('encodings.shift_jis',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\shift_jis.pyc',
+   'PYMODULE'),
+  ('encodings.rot_13',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\rot_13.pyc',
+   'PYMODULE'),
+  ('encodings.raw_unicode_escape',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\raw_unicode_escape.pyc',
+   'PYMODULE'),
+  ('encodings.quopri_codec',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\quopri_codec.pyc',
+   'PYMODULE'),
+  ('encodings.punycode',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\punycode.pyc',
+   'PYMODULE'),
+  ('encodings.ptcp154',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\ptcp154.pyc',
+   'PYMODULE'),
+  ('encodings.palmos',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\palmos.pyc',
+   'PYMODULE'),
+  ('encodings.oem',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\oem.pyc',
+   'PYMODULE'),
+  ('encodings.mbcs',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mbcs.pyc',
+   'PYMODULE'),
+  ('encodings.mac_turkish',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_turkish.pyc',
+   'PYMODULE'),
+  ('encodings.mac_romanian',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_romanian.pyc',
+   'PYMODULE'),
+  ('encodings.mac_roman',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_roman.pyc',
+   'PYMODULE'),
+  ('encodings.mac_latin2',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_latin2.pyc',
+   'PYMODULE'),
+  ('encodings.mac_iceland',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_iceland.pyc',
+   'PYMODULE'),
+  ('encodings.mac_greek',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_greek.pyc',
+   'PYMODULE'),
+  ('encodings.mac_farsi',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_farsi.pyc',
+   'PYMODULE'),
+  ('encodings.mac_cyrillic',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_cyrillic.pyc',
+   'PYMODULE'),
+  ('encodings.mac_croatian',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_croatian.pyc',
+   'PYMODULE'),
+  ('encodings.mac_arabic',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\mac_arabic.pyc',
+   'PYMODULE'),
+  ('encodings.latin_1',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\latin_1.pyc',
+   'PYMODULE'),
+  ('encodings.kz1048',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\kz1048.pyc',
+   'PYMODULE'),
+  ('encodings.koi8_u',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\koi8_u.pyc',
+   'PYMODULE'),
+  ('encodings.koi8_t',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\koi8_t.pyc',
+   'PYMODULE'),
+  ('encodings.koi8_r',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\koi8_r.pyc',
+   'PYMODULE'),
+  ('encodings.johab',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\johab.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_9',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_9.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_8',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_8.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_7',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_7.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_6',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_6.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_5',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_5.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_4',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_4.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_3',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_3.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_2',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_2.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_16',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_16.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_15',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_15.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_14',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_14.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_13',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_13.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_11',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_11.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_10',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_10.pyc',
+   'PYMODULE'),
+  ('encodings.iso8859_1',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso8859_1.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_kr',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_kr.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_jp_ext',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_jp_ext.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_jp_3',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_jp_3.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_jp_2004',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_jp_2004.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_jp_2',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_jp_2.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_jp_1',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_jp_1.pyc',
+   'PYMODULE'),
+  ('encodings.iso2022_jp',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\iso2022_jp.pyc',
+   'PYMODULE'),
+  ('encodings.idna',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\idna.pyc',
+   'PYMODULE'),
+  ('encodings.hz',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\hz.pyc',
+   'PYMODULE'),
+  ('encodings.hp_roman8',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\hp_roman8.pyc',
+   'PYMODULE'),
+  ('encodings.hex_codec',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\hex_codec.pyc',
+   'PYMODULE'),
+  ('encodings.gbk',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\gbk.pyc',
+   'PYMODULE'),
+  ('encodings.gb2312',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\gb2312.pyc',
+   'PYMODULE'),
+  ('encodings.gb18030',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\gb18030.pyc',
+   'PYMODULE'),
+  ('encodings.euc_kr',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\euc_kr.pyc',
+   'PYMODULE'),
+  ('encodings.euc_jp',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\euc_jp.pyc',
+   'PYMODULE'),
+  ('encodings.euc_jisx0213',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\euc_jisx0213.pyc',
+   'PYMODULE'),
+  ('encodings.euc_jis_2004',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\euc_jis_2004.pyc',
+   'PYMODULE'),
+  ('encodings.cp950',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp950.pyc',
+   'PYMODULE'),
+  ('encodings.cp949',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp949.pyc',
+   'PYMODULE'),
+  ('encodings.cp932',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp932.pyc',
+   'PYMODULE'),
+  ('encodings.cp875',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp875.pyc',
+   'PYMODULE'),
+  ('encodings.cp874',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp874.pyc',
+   'PYMODULE'),
+  ('encodings.cp869',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp869.pyc',
+   'PYMODULE'),
+  ('encodings.cp866',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp866.pyc',
+   'PYMODULE'),
+  ('encodings.cp865',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp865.pyc',
+   'PYMODULE'),
+  ('encodings.cp864',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp864.pyc',
+   'PYMODULE'),
+  ('encodings.cp863',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp863.pyc',
+   'PYMODULE'),
+  ('encodings.cp862',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp862.pyc',
+   'PYMODULE'),
+  ('encodings.cp861',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp861.pyc',
+   'PYMODULE'),
+  ('encodings.cp860',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp860.pyc',
+   'PYMODULE'),
+  ('encodings.cp858',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp858.pyc',
+   'PYMODULE'),
+  ('encodings.cp857',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp857.pyc',
+   'PYMODULE'),
+  ('encodings.cp856',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp856.pyc',
+   'PYMODULE'),
+  ('encodings.cp855',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp855.pyc',
+   'PYMODULE'),
+  ('encodings.cp852',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp852.pyc',
+   'PYMODULE'),
+  ('encodings.cp850',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp850.pyc',
+   'PYMODULE'),
+  ('encodings.cp775',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp775.pyc',
+   'PYMODULE'),
+  ('encodings.cp737',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp737.pyc',
+   'PYMODULE'),
+  ('encodings.cp720',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp720.pyc',
+   'PYMODULE'),
+  ('encodings.cp500',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp500.pyc',
+   'PYMODULE'),
+  ('encodings.cp437',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp437.pyc',
+   'PYMODULE'),
+  ('encodings.cp424',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp424.pyc',
+   'PYMODULE'),
+  ('encodings.cp273',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp273.pyc',
+   'PYMODULE'),
+  ('encodings.cp1258',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1258.pyc',
+   'PYMODULE'),
+  ('encodings.cp1257',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1257.pyc',
+   'PYMODULE'),
+  ('encodings.cp1256',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1256.pyc',
+   'PYMODULE'),
+  ('encodings.cp1255',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1255.pyc',
+   'PYMODULE'),
+  ('encodings.cp1254',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1254.pyc',
+   'PYMODULE'),
+  ('encodings.cp1253',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1253.pyc',
+   'PYMODULE'),
+  ('encodings.cp1252',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1252.pyc',
+   'PYMODULE'),
+  ('encodings.cp1251',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1251.pyc',
+   'PYMODULE'),
+  ('encodings.cp1250',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1250.pyc',
+   'PYMODULE'),
+  ('encodings.cp1140',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1140.pyc',
+   'PYMODULE'),
+  ('encodings.cp1125',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1125.pyc',
+   'PYMODULE'),
+  ('encodings.cp1026',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1026.pyc',
+   'PYMODULE'),
+  ('encodings.cp1006',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp1006.pyc',
+   'PYMODULE'),
+  ('encodings.cp037',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\cp037.pyc',
+   'PYMODULE'),
+  ('encodings.charmap',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\charmap.pyc',
+   'PYMODULE'),
+  ('encodings.bz2_codec',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\bz2_codec.pyc',
+   'PYMODULE'),
+  ('encodings.big5hkscs',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\big5hkscs.pyc',
+   'PYMODULE'),
+  ('encodings.big5',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\big5.pyc',
+   'PYMODULE'),
+  ('encodings.base64_codec',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\base64_codec.pyc',
+   'PYMODULE'),
+  ('encodings.ascii',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\ascii.pyc',
+   'PYMODULE'),
+  ('encodings.aliases',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\aliases.pyc',
+   'PYMODULE'),
+  ('encodings',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\encodings\\__init__.pyc',
+   'PYMODULE'),
+  ('sre_compile',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\sre_compile.pyc',
+   'PYMODULE'),
+  ('sre_parse',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\sre_parse.pyc',
+   'PYMODULE'),
+  ('io',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\io.pyc',
+   'PYMODULE'),
+  ('copyreg',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\copyreg.pyc',
+   'PYMODULE'),
+  ('enum',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\enum.pyc',
+   'PYMODULE'),
+  ('_weakrefset',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\_weakrefset.pyc',
+   'PYMODULE'),
+  ('linecache',
+   'C:\\Program '
+   'Files\\AutoClaw\\resources\\python\\python313.zip\\linecache.pyc',
+   'PYMODULE'),
+  ('os',
+   'C:\\Program Files\\AutoClaw\\resources\\python\\python313.zip\\os.pyc',
+   'PYMODULE')])

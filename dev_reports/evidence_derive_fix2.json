@@ -1,0 +1,51 @@
+[
+  {
+    "input": "fps1.20.1",
+    "derived": "1.20.1",
+    "expected": "1.20.1",
+    "required_major": 17,
+    "pass": true
+  },
+  {
+    "input": "1.21.5",
+    "derived": "1.21.5",
+    "expected": "1.21.5",
+    "required_major": 21,
+    "pass": true
+  },
+  {
+    "input": "1.20.1-Fabric 0.16.14-OptiFine_I6",
+    "derived": "1.20.1",
+    "expected": "1.20.1",
+    "required_major": 17,
+    "pass": true
+  },
+  {
+    "input": "1.21.11红石生电优化",
+    "derived": "1.21.11",
+    "expected": "1.21.11",
+    "required_major": 21,
+    "pass": true
+  },
+  {
+    "input": "fabric-loader-0.16.14-1.20.1",
+    "derived": "1.20.1",
+    "expected": "1.20.1",
+    "required_major": 17,
+    "pass": true
+  },
+  {
+    "input": "Fabric 0.16.14 1.20.1",
+    "derived": "1.20.1",
+    "expected": "1.20.1",
+    "required_major": 17,
+    "pass": true
+  },
+  {
+    "input": "my1.20.1",
+    "derived": "1.20.1",
+    "expected": "1.20.1",
+    "required_major": 17,
+    "pass": true
+  }
+]

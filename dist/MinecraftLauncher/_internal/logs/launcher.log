@@ -1,0 +1,1 @@
+2026-09-01 20:51:03,807 [ERROR] root: 清单获取失败（bmclapi）：无法连接下载源，请检查网络或在设置中切换下载源 ｜ detail: HTTPError: HTTP Error 429: Too Many Requests (https://bmclapi2.bangbang93.com/version_manifest/v2)

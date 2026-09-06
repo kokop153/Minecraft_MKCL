@@ -1,0 +1,34 @@
+{
+  "fps1201": {
+    "pid": 1768,
+    "menu": false,
+    "shot": null,
+    "exited": null,
+    "fail": null
+  },
+  "pack1211": {
+    "pid": 2804,
+    "menu": false,
+    "shot": null,
+    "exited": null,
+    "fail": null
+  },
+  "pass": [
+    "配置：game_dir",
+    "[fps1201] 启动流程发起（isolate=True）",
+    "[fps1201] 进程创建 PID=1768",
+    "[fps1201] 台账已创建",
+    "[pack1211] 启动流程发起（isolate=True）",
+    "[pack1211] 进程创建 PID=2804",
+    "[pack1211] 台账已创建",
+    "[pack1211] 台账字段完整",
+    "日志全程无 [WinError 87]"
+  ],
+  "fail": [
+    "[fps1201] 主菜单信号 Sound engine started",
+    "[fps1201] 游戏已终止",
+    "[fps1201] 台账字段完整",
+    "[pack1211] 主菜单信号 Sound engine started",
+    "[pack1211] 游戏已终止"
+  ]
+}

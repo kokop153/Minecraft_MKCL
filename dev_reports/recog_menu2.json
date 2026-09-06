@@ -1,0 +1,10 @@
+﻿{
+  "code": 0,
+  "msg": "SUCCESS",
+  "time": 1788260443690,
+  "trace": "e7d549eab00c43b697512c4322a56db5",
+  "data": {
+    "text": "鏍规嵁鎴浘鍒嗘瀽锛屽厛璇存槑涓€鐐癸細**杩欏疄闄呬笂涓嶆槸 Minecraft 娓告垙绐楀彛鏈韩锛岃€屾槸鍚姩鍣紙鐣岄潰椋庢牸寰堝儚 PCL2锛夌殑鏃ュ織椤甸潰**锛屾樉绀虹殑鏄父鎴忓垰鍚姩銆佹ā缁勫垵濮嬪寲闃舵鐨勬棩蹇楄緭鍑恒€俓n\n**1) 鐣岄潰绫诲瀷**\n鏃笉鏄富鑿滃崟涔熶笉鏄父鎴忓唴鐢婚潰锛岃€屾槸**鍚姩鍣ㄧ殑鏃ュ織/鎺у埗鍙扮晫闈?*銆備粠鏃ュ織鍐呭锛圶aero 绯诲垪妯＄粍鍒濆鍖栥€丱penGL 涓婁笅鏂囧垱寤虹瓑锛夊垽鏂紝娓告垙姝ｅ浜?*鍔犺浇/鍒濆鍖栭樁娈?*锛孧inecraft 绐楀彛鍙兘灏氭湭瀹屽叏鏄剧ず銆俓n\n**2) 鍙鐨勬枃瀛楋紙閫愪釜鍒楀嚭锛?*\n\n鍙充晶闈㈡澘锛歕n- 姒傝淇℃伅\n- 娓告垙鐩綍\n- Java 杩愯鏃禱n- 鍐呭瓨鍒嗛厤\n- 涓嬭浇婧怽n\n宸︿晶鏃ュ織鍖猴紙琛岄琚埅鏂紝浠庢畫缂哄唴瀹圭湅锛夛細\n- 鈥zing SimpleSorterR for 1.21.11!\n- 鈥ing/primary common/client config for channel xaerolib:main!\n- Xaerolib common 1/2!\n- Minimap: World Map found!\n- Minimap: No Vivercraft!\n- xaerominimap:main 鐨?config 鍔犺浇琛孿n- 鈥alue in config default (1) for option entity_radar_categories! Skipping.\n- 鈥zing XaeroPlus / API not found. Disabling Baritone support.\n- xaeroworldmap:main 鐩稿叧琛孿n- Xaero's World Map - Stage 1/2\n- 鈥orkarounds for the NVIDIA graphics driver鈥n- 鈥sShaders is set to false in iris.properties\n- 鈥Renderer: NVIDIA GeForce GTX 750 Ti/PCIe/SSE2\n- GL_ARB_buffer_storage, GL_KHR_debug, GL_EXT_texture_filter_anisotropic\n- 鈥xtended_lumina_NEA_1.21.5.zip pack metadata鈥n- 鈥IDIA GeForce GTX 750 Ti/PCIe/SSE2 (Supports OpenGL 3.3.0 NVIDIA 582.28)\n- 鈥?; nvGPU initialized\n- 鈥r-2:[INFO]: check model plugin work\n\n**鏈彂鐜颁换浣曟寜閽?*锛堟埅鍥捐寖鍥村唴锛夈€俓n\n**3) 鏂囧瓧娓叉煋**\n姝ｅ父銆傛棩蹇椾娇鐢ㄧ瓑瀹藉瓧浣擄紝娓呮櫚鍙锛屾棤涔辩爜銆佹棤閲嶅奖銆傚敮涓€闂鏄?*姣忚宸︾琚埅鏂?*锛堝 \"鈥zing\" 搴斾负 \"Initializing\"锛夛紝杩欐槸妯悜婊氬姩/闀胯鎴柇鎵€鑷达紝灞炴甯告樉绀洪€昏緫鑰岄潪娓叉煋鏁呴殰銆俓n\n**4) 鑳屾櫙**\n绾櫧/娴呯伆鑹茬殑鍚姩鍣?UI锛氭棩蹇楀尯涓虹櫧鑹插簳銆佸甫娴呰壊杈规鍦嗚锛涘彸渚т俊鎭潰鏉夸负娴呰壊搴曪紱椤堕儴杩樻畫鐣欎竴琛屾贰鍖栫殑鐏板瓧锛堚€滆銆傗€濓級锛屽簲鏄粴鍔ㄥ悗娈嬬暀鐨勬棩蹇楄銆俓n\n**5) 娓叉煋寮傚父**\n**娌℃湁**榛戝潡銆佺己绾圭悊銆侀敊浣嶆垨鑺卞睆鐜拌薄銆傚敮涓€鍊煎緱娉ㄦ剰鐨勫紓甯镐俊鎭湪鏃ュ織鍐呭灞傞潰锛歚entity_radar_categories` 閰嶇疆鍊兼棤鏁堣璺宠繃銆乣can't validate鈥锛堟渶鍚庝竴琛岃鎴柇锛夛紝杩欎簺鏄父鎴忔棩蹇楄鍛婏紝涓嶆槸鐢婚潰娓叉煋闂銆?,
+    "tokens": 3655
+  }
+}
