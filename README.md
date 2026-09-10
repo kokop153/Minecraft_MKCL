@@ -66,4 +66,5 @@ MIT License
 ---
 **MKCL — Mode Kacl Client Easier**
 专为我的世界多实例管理打造
-**＃＃该README由AI生成**
+---
+**该README由AI生成**
