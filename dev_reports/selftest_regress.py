@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 """回归：两个不同版本 id 构建启动命令，核对 mainClass/natives/classpath/参数随版本变化。"""
 import os, sys, json, io
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.environ.setdefault("PYTHONIOENCODING", "utf-8")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")

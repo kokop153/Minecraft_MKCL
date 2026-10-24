@@ -14,6 +14,7 @@ class JavaRuntime:
     major: int     # 主版本号，如 21
     vendor: str    # 供应商猜测，如 "Temurin"；猜不出为 ""
     is_javaw: str  # 同目录 javaw.exe 路径；没有为 ""
+    is_64: bool = True   # 64 位 JVM 标志；32 位 JVM 堆上限仅约 1.5G
 
 
 _VENDOR_HINTS = (
@@ -148,7 +149,11 @@ def _guess_vendor(text: str) -> str:
 
 
 def _probe(java_exe: str):
-    """运行 java -version（信息输出在 stderr），解析失败返回 None。"""
+    """运行 java -version（信息输出在 stderr），解析失败返回 None。
+
+    返回 (version, major, vendor, is_64)：is_64 依据输出中的
+    "64-Bit" 标记（32 位 Client VM 不输出该标记）。
+    """
     try:
         proc = subprocess.run(
             [java_exe, "-version"],
@@ -168,7 +173,7 @@ def _probe(java_exe: str):
     major = _major_of(version)
     if major <= 0:
         return None
-    return version, major, _guess_vendor(text)
+    return version, major, _guess_vendor(text), ("64-Bit" in text)
 
 
 def find_javas(extra_paths=None, max_count: int = 12):
@@ -188,7 +193,7 @@ def find_javas(extra_paths=None, max_count: int = 12):
         probe = _probe(java_exe)
         if probe is None:
             continue
-        version, major, vendor = probe
+        version, major, vendor, is_64 = probe
         javaw = os.path.join(d, "javaw.exe")
         seen_real.add(real)
         results.append(JavaRuntime(
@@ -197,6 +202,7 @@ def find_javas(extra_paths=None, max_count: int = 12):
             major=major,
             vendor=vendor,
             is_javaw=javaw if os.path.isfile(javaw) else "",
+            is_64=is_64,
         ))
         if len(results) >= max_count:
             break
@@ -265,10 +271,13 @@ def pick_java_for(mc_version: str, javas, preferred: str = ""):
                     major=probe[1],
                     vendor=probe[2],
                     is_javaw=javaw if os.path.isfile(javaw) else "",
+                    is_64=probe[3],
                 )
 
     ok = [j for j in (javas or []) if j.major >= required]
     if not ok:
         return None
-    # major 升序（最接近需求），同 major 时版本号降序（新的优先）
-    return min(ok, key=lambda j: (j.major, tuple(-n for n in _ver_key(j.version))))
+    # major 升序（最接近需求）；同 major 时 64 位优先（32 位堆上限仅约
+    # 1.5G，选了会导致 -Xmx 超限、JVM 创建失败弹原生错误框）；再按版本号新的
+    return min(ok, key=lambda j: (
+        j.major, not j.is_64, tuple(-n for n in _ver_key(j.version))))

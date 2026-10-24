@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 """多实例冒烟：命令构建层面验证 3 实例的独立性（不拉起真实进程）。"""
 import os, sys, io, json
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 from launcher.launch import build_launch_command

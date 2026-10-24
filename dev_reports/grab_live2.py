@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import ctypes, ctypes.wintypes as wt, os, sys, time, io
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 user32 = ctypes.windll.user32
 user32.SetProcessDPIAware()

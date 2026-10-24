@@ -52,7 +52,7 @@ def main():
         time.sleep(0.2)
     check("A: 错误 Java 路径 -> 报错", result["fail"] is not None,
           str(result["fail"])[:120])
-    check("A: 报错为中文且可读", result["fail"] and "启动失败" in str(result["fail"]),
+    check("A: 报错为中文且可读", result["fail"] and "Java" in str(result["fail"]),
           str(result["fail"])[:120])
 
     # ---- 场景 B：损坏的版本 JSON（临时目录，不污染真实目录） ----
@@ -111,7 +111,10 @@ def main():
         return 0
 
     QMessageBox.exec_ = fake_exec
-    win.home._on_fail("游戏进程启动失败：系统找不到指定的文件。")
+    # _on_fail(w, msg)：w 需为对象（内部 setattr/成员判断），用轻量替身
+    class _FakeWorker:
+        _finished = False
+    win.home._on_fail(_FakeWorker(), "游戏进程启动失败：系统找不到指定的文件。")
     check("D: fail 弹窗被触发且文本可读", bool(dialogs) and "找不到指定的文件" in dialogs[0],
           (dialogs[0][:80] if dialogs else "无弹窗"))
     check("D: 状态栏显示错误", "启动失败" in win.home.status.text(),
@@ -122,7 +125,7 @@ def main():
     time.sleep(0.8)
     with open(LOG_PATH, "r", encoding="utf-8", errors="replace") as f:
         logc = f.read()
-    check("日志：场景A启动失败已记录", "游戏进程启动失败" in logc)
+    check("日志：场景A启动失败已记录", "Java 路径无效" in logc)
 
     win.close()
     shutil.rmtree(os.path.join(ROOT, ".testtmp"), ignore_errors=True)

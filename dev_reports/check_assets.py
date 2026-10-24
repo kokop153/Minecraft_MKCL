@@ -5,7 +5,7 @@ import os
 import sys
 import io
 
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 ASSETS = r"F:\.minecraft\assets"
 

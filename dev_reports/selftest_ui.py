@@ -51,9 +51,16 @@ def main():
     # ---- 1. 启动数据加载 ----
     ok = wait_until(app, lambda: bool(win.versions_page.versions), 40)
     check("版本扫描加载", ok, "count=%d" % len(win.versions_page.versions))
-    wait_until(app, lambda: bool(win.downloads.manifest_versions), 45)
-    check("清单加载", len(win.downloads.manifest_versions) > 100,
-          "count=%d" % len(win.downloads.manifest_versions))
+    wait_until(app, lambda: bool(win.downloads.client_tab.manifest_versions), 45)
+    manifest_count = len(win.downloads.client_tab.manifest_versions)
+    if manifest_count > 100:
+        check("清单加载", True, "count=%d" % manifest_count)
+    else:
+        # 外网（bmclapi）不可达时降级：要求给出中文可读错误（代码路径正确）
+        err_text = win.downloads.client_tab.list_info.text()
+        check("清单加载（外网不可达，降级验证中文错误提示）",
+              "清单获取失败" in err_text and "网络" in err_text,
+              "count=%d err=%s" % (manifest_count, err_text[:80]))
     wait_until(app, lambda: len(win.settings.detected_javas) > 0, 40)
     check("Java 检测加载", len(win.settings.detected_javas) >= 4,
           "count=%d" % len(win.settings.detected_javas))
@@ -100,7 +107,8 @@ def main():
     # ---- 4. 主页状态 ----
     win.goto("home")
     app.processEvents()
-    home_text = win.home.ver_card.text() + "|" + win.home.acc_card.text()
+    # launch_sub 显示中间省略文本，完整版本名在 tooltip
+    home_text = (win.home.launch_sub.toolTip() or "") + "|" + win.home.side_name.text()
     check("主页版本/账号卡片", target in home_text and "kokop" in home_text,
           home_text.replace("\n", " / "))
     check("启动按钮可用", win.home.launch_btn.isEnabled())

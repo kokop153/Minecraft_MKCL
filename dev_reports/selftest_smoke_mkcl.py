@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 """MKCL 离屏冒烟：五页切换 + 淡入动画 + 进程扫描 + 更名校验。"""
 import os, sys, time
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 os.environ.setdefault("QT_QPA_FONTDIR", r"C:\Windows\Fonts")

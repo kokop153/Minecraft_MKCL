@@ -2,6 +2,7 @@
 """后台工作线程：扫描 / Java 检测 / 清单 / 下载桥 / 启动 / 进程管理。"""
 import json
 import logging
+import os
 import time
 
 from PyQt5.QtCore import QThread, pyqtSignal, QObject
@@ -15,12 +16,16 @@ from launcher.launch import (
     launch_game,
     resolve_java_for_launch,
     derive_mc_version_for,
+    validate_jvm_heap,
+    effective_heap_gb,
     begin_launch_record,
     update_launch_record,
     finish_launch_record,
     prune_launch_records,
 )
 from launcher import meta
+from launcher import mods
+from launcher import modloaders
 
 
 def _err_text(e: Exception) -> str:
@@ -247,11 +252,14 @@ class MultiLaunchWorker(QThread):
 
     def __init__(self, base_dir, game_dir, folder, java_path, count,
                  memory_gb, username, jvm_extra="", width=854, height=480,
+                 priority="normal", fullscreen=False, ip_preference="java",
                  parent=None):
         super().__init__(parent)
         self._base_dir = base_dir
         self._args = (game_dir, folder, java_path, max(1, int(count)),
-                      memory_gb, username, jvm_extra, width, height)
+                      memory_gb, username, jvm_extra, width, height,
+                      str(priority or "normal"), bool(fullscreen),
+                      str(ip_preference or "java"))
         self._procs = []      # [(idx, GameProcess, rec_path)]
         self._stop = False
 
@@ -277,7 +285,7 @@ class MultiLaunchWorker(QThread):
 
     def run(self):
         game_dir, folder, java_path, count, memory_gb, username, \
-            jvm_extra, width, height = self._args
+            jvm_extra, width, height, priority, fullscreen, ip_preference = self._args
         base_dir = self._base_dir
         batch = next(MultiLaunchWorker._BATCH_SEQ)
 
@@ -288,6 +296,8 @@ class MultiLaunchWorker(QThread):
             java_path = resolve_java_for_launch(game_dir, folder, java_path)
             self.stage.emit("使用 Java：%s" % java_path)
             self._java = java_path
+            # 启动前验证 -Xmx：失败给中文提示，避免 JVM 弹系统原生错误框
+            validate_jvm_heap(java_path, effective_heap_gb(java_path, memory_gb))
 
             for k in range(1, count + 1):
                 if self._stop:
@@ -302,7 +312,9 @@ class MultiLaunchWorker(QThread):
                     user_type="legacy", jvm_extra=jvm_extra,
                     width=width, height=height,
                     isolate_dir=True, instance_tag=tag,
+                    fullscreen=fullscreen, ip_preference=ip_preference,
                 )
+                cmd["priority"] = priority
                 rec = begin_launch_record(self._base_dir, folder)
                 update_launch_record(rec, instance=k, mc_version=derive_mc_version_for(game_dir, folder),
                                      java=java_path, command=cmd["command"],
@@ -360,11 +372,13 @@ class LaunchWorker(QThread):
 
     def __init__(self, game_dir, folder, java_path, memory_gb, username, uuid,
                  user_type, jvm_extra, width, height, isolate_dir, base_dir=None,
-                 instance_tag="", parent=None):
+                 instance_tag="", priority="normal", fullscreen=False,
+                 ip_preference="java", parent=None):
         super().__init__(parent)
         self._args = (game_dir, folder, java_path, memory_gb, username, uuid,
                       user_type, jvm_extra, width, height, isolate_dir,
-                      str(instance_tag or ""))
+                      str(instance_tag or ""), str(priority or "normal"),
+                      bool(fullscreen), str(ip_preference or "java"))
         self._base_dir = base_dir
         self._rec = None
         self._proc = None
@@ -377,7 +391,8 @@ class LaunchWorker(QThread):
 
     def run(self):
         game_dir, folder, java_path, memory_gb, username, uuid, user_type, \
-            jvm_extra, width, height, isolate_dir, instance_tag = self._args
+            jvm_extra, width, height, isolate_dir, instance_tag, \
+            priority, fullscreen, ip_preference = self._args
         self._rec = begin_launch_record(self._base_dir, folder)
         try:
             # Java 动态解析：手动路径校验有效性，空值时按版本自动选择
@@ -387,6 +402,8 @@ class LaunchWorker(QThread):
             update_launch_record(self._rec, java=java_path,
                                  mc_version=derive_mc_version_for(game_dir, folder),
                                  status="resolving")
+            # 启动前验证 -Xmx：失败给中文提示，避免 JVM 弹系统原生错误框
+            validate_jvm_heap(java_path, effective_heap_gb(java_path, memory_gb))
 
             self.stage.emit("正在解压 natives 并构建启动命令…")
             cmd = build_launch_command(
@@ -395,7 +412,10 @@ class LaunchWorker(QThread):
                 user_type=user_type,
                 jvm_extra=jvm_extra, width=width, height=height,
                 isolate_dir=isolate_dir,
+                instance_tag=instance_tag,
+                fullscreen=fullscreen, ip_preference=ip_preference,
             )
+            cmd["priority"] = priority
             update_launch_record(
                 self._rec, command=cmd["command"], workdir=cmd["workdir"],
                 natives_dir=cmd["natives_dir"],
@@ -455,3 +475,219 @@ class LaunchWorker(QThread):
 
     def alive_pids(self) -> list:
         return [self._proc._proc.pid] if self.game_running() else []
+
+
+class ModSearchWorker(QThread):
+    """搜索 Modrinth 项目（mod / modpack）。"""
+    ok = pyqtSignal(object, int)      # (hits, total_hits)
+    fail = pyqtSignal(str)
+
+    def __init__(self, query, project_type, mc_version, loader, offset=0, parent=None):
+        super().__init__(parent)
+        self.query = query
+        self.project_type = project_type
+        self.mc_version = mc_version
+        self.loader = loader
+        self.offset = offset
+
+    def run(self):
+        try:
+            hits, total = mods.search_projects(
+                self.query, self.project_type, self.mc_version,
+                self.loader, offset=self.offset)
+            self.ok.emit(hits, total)
+        except Exception as e:
+            logging.error("模组搜索失败：%s ｜ detail: %s",
+                          e, getattr(e, "detail", ""))
+            self.fail.emit(_err_text(e))
+
+
+class ModVersionsWorker(QThread):
+    """获取某项目的兼容版本列表。"""
+    ok = pyqtSignal(object)      # list[version]
+    fail = pyqtSignal(str)
+
+    def __init__(self, project_id, mc_version, loader, parent=None):
+        super().__init__(parent)
+        self.project_id = project_id
+        self.mc_version = mc_version
+        self.loader = loader
+
+    def run(self):
+        try:
+            self.ok.emit(mods.get_versions(self.project_id, self.mc_version, self.loader))
+        except Exception as e:
+            logging.error("模组版本获取失败：%s", _err_text(e))
+            self.fail.emit(_err_text(e))
+
+
+class ModIconWorker(QThread):
+    """批量下载项目图标，回传 {project_id: bytes}（QPixmap 在 GUI 线程构造）。"""
+    ok = pyqtSignal(object)      # dict[id -> bytes]
+    fail = pyqtSignal(str)
+
+    def __init__(self, hits, parent=None):
+        super().__init__(parent)
+        self.hits = hits or []
+
+    def run(self):
+        out = {}
+        try:
+            for h in self.hits:
+                iu = h.get("icon_url")
+                pid = h.get("id")
+                if not iu or not pid or pid in out:
+                    continue
+                try:
+                    out[pid] = mods._open_bytes(iu, timeout=20, retries=2)
+                except Exception:
+                    pass
+            self.ok.emit(out)
+        except Exception as e:
+            self.fail.emit(_err_text(e))
+
+
+class ModDepsWorker(QThread):
+    """解析模组的『前置依赖』：展示清单 + 必需依赖的下载项。"""
+    ok = pyqtSignal(object, object)   # (display_list[(title,type)], dep_items)
+    fail = pyqtSignal(str)
+
+    def __init__(self, version_entry, mc_version, loader, mods_folder, parent=None):
+        super().__init__(parent)
+        self.version_entry = version_entry
+        self.mc_version = mc_version
+        self.loader = loader
+        self.mods_folder = mods_folder
+
+    def run(self):
+        try:
+            deps = self.version_entry.get("dependencies") or []
+            display = mods.collect_required_dependency_titles(deps)
+            res = mods.build_dependency_items(
+                deps, self.mc_version, self.loader, self.mods_folder)
+            self.ok.emit(display, res.get("items") or [])
+        except Exception as e:
+            logging.error("前置依赖解析失败：%s", _err_text(e))
+            # 依赖解析失败不应阻断主模组下载，仅返回空
+            self.ok.emit([], [])
+
+
+class LoaderListWorker(QThread):
+    """列举某加载器在指定 MC 版本下的可用版本（下拉填充）。"""
+    ok = pyqtSignal(str, object)      # (loader, [{value,label}])
+    fail = pyqtSignal(str, str)       # (loader, msg)
+
+    def __init__(self, loader, mc_version, parent=None):
+        super().__init__(parent)
+        self.loader = loader
+        self.mc_version = mc_version
+
+    def run(self):
+        try:
+            opts = modloaders.list_loader_versions(self.loader, self.mc_version)
+            self.ok.emit(self.loader, opts)
+        except Exception as e:
+            logging.error("加载器版本列举失败（%s）：%s", self.loader, _err_text(e))
+            self.fail.emit(self.loader, _err_text(e))
+
+
+class LoaderInstallWorker(QThread):
+    """安装模组端（加载器）：Fabric/Quilt 走 JSON + 下载；Forge/NeoForge 走安装器。"""
+    stage = pyqtSignal(str)
+    progress = pyqtSignal(int, int, str, float)
+    finished = pyqtSignal(str)        # 成功消息（含新版本名）
+    fail = pyqtSignal(str)
+
+    def __init__(self, loader, mc_version, loader_version, game_dir, source, parent=None):
+        super().__init__(parent)
+        self.loader = loader
+        self.mc_version = mc_version
+        self.loader_version = loader_version
+        self.game_dir = game_dir
+        self.source = source
+
+    def run(self):
+        try:
+            if self.loader in ("fabric", "quilt"):
+                self._install_json()
+            else:
+                self._install_via_installer()
+        except LauncherError as e:
+            logging.error("加载器安装失败：%s ｜ detail: %s",
+                          e, getattr(e, "detail", ""))
+            self.fail.emit(str(e))
+        except Exception as e:
+            logging.error("加载器安装失败（未预期）：%s: %s", type(e).__name__, e)
+            self.fail.emit("%s: %s" % (type(e).__name__, e))
+
+    # ----- Fabric / Quilt -----
+    def _install_json(self):
+        self.stage.emit("正在获取 %s 加载器版本信息…" % self.loader)
+        folder, prof = modloaders.fetch_loader_version_json(
+            self.loader, self.mc_version, self.loader_version)
+        vdir = os.path.join(self.game_dir, "versions", folder)
+        if os.path.isfile(os.path.join(vdir, folder + ".json")):
+            self.finished.emit("该加载器版本已存在：%s" % folder)
+            return
+        modloaders.write_loader_version_json(self.game_dir, folder, prof)
+        self.stage.emit("正在收集加载器依赖文件（库 / 客户端 / 资源）…")
+        items = meta.collect_download_items(
+            self.game_dir, folder, self.source,
+            include_assets=True, include_libraries=True, include_natives=True)
+        if not items:
+            self.finished.emit("已写入 %s 版本 json（无额外需下载文件）。" % folder)
+            return
+        self.stage.emit("正在下载 %s 加载器文件（%d 个）…" % (folder, len(items)))
+        self._download_items(items, "下载 %s" % folder)
+        self.finished.emit("✅ 已安装 %s 模组端：%s（请到『版本选择』设为当前版本）"
+                           % (self.loader, folder))
+
+    # ----- Forge / NeoForge -----
+    def _install_via_installer(self):
+        self.stage.emit("正在解析用于安装的 Java 运行时…")
+        java_exe = modloaders.resolve_java_for_installer(self.mc_version)
+        self.stage.emit("正在下载 %s 安装器…" % self.loader)
+        import tempfile
+        tmp = os.path.join(tempfile.gettempdir(),
+                           "%s-%s-installer.jar" % (self.loader, self.loader_version))
+        try:
+            if self.loader == "forge":
+                meta.download_file(
+                    modloaders.loader_installer_url(
+                        "forge", self.mc_version, self.loader_version),
+                    tmp, source="bmclapi", timeout=120, retries=3)
+            else:
+                meta.download_file(
+                    modloaders.loader_installer_url(
+                        "neoforge", self.mc_version, self.loader_version),
+                    tmp, source="official", timeout=120, retries=3)
+        except LauncherError as e:
+            raise LauncherError("下载 %s 安装器失败" % self.loader, detail=str(e))
+        self.stage.emit("正在运行 %s 安装器（可能需要几分钟）…" % self.loader)
+        modloaders.run_installer(tmp, self.game_dir, java_exe)
+        self.finished.emit("✅ 已通过安装器完成 %s 模组端安装（请到『版本选择』刷新并设为当前版本）"
+                           % self.loader)
+
+    def _download_items(self, items, label):
+        from launcher.download import DownloadManager
+        total = len(items)
+        done = [0]
+
+        def prog(d, t, n, p):
+            done[0] = d
+            self.progress.emit(d, t, n, p)
+
+        def done_cb(ok, failed):
+            self._ok = ok
+            self._failed = failed
+
+        dm = DownloadManager(source=self.source, max_workers=6)
+        dm.download(items, progress=prog,
+                    done=lambda ok, failed: done_cb(ok, failed), error=lambda e: None)
+        # DownloadManager 在后台线程；这里简单轮询完成
+        import time as _t
+        while dm.is_running():
+            _t.sleep(0.2)
+        if getattr(self, "_failed", None):
+            raise LauncherError(
+                "模组端文件下载不完整：%d 个失败" % len(self._failed))

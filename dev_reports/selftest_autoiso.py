@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 import os, sys, time
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 os.environ.setdefault("QT_QPA_FONTDIR", r"C:\Windows\Fonts")
@@ -33,11 +33,11 @@ def select_ver(target):
 check("auto_isolate 默认 True", ctx.config.auto_isolate is True)
 select_ver("1.21.5")
 check("1.21.5 隔离勾选自动开启", win.versions_page.isolate_cb.isChecked())
-win.settings.auto_iso_cb.setChecked(False)
+win.settings.isolate_cb.setCurrentIndex(1)  # 不隔离
 for _ in range(4): app.processEvents(); time.sleep(0.05)
 select_ver("1.21.5")
 check("关闭默认隔离后 1.21.5 勾选为关", not win.versions_page.isolate_cb.isChecked())
-win.settings.auto_iso_cb.setChecked(True)
+win.settings.isolate_cb.setCurrentIndex(0)  # 隔离所有
 for _ in range(4): app.processEvents(); time.sleep(0.05)
 select_ver("1.21.5")
 check("重新开启默认隔离", ctx.config.auto_isolate is True and win.versions_page.isolate_cb.isChecked())

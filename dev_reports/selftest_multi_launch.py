@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 """双实例真实启动验证（无 GUI 依赖）：MultiLaunchWorker 端到端。"""
 import os, sys, time, json, glob
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.environ.setdefault("PYTHONIOENCODING", "utf-8")
 try:

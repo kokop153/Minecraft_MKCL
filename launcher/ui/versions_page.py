@@ -60,8 +60,10 @@ class VersionsPage(QWidget):
         self.detail = detail
         cv.addWidget(detail)
 
-        self.isolate_cb = QCheckBox(
-            "为该版本使用隔离游戏目录（默认开启；saves/mods/config 独立存放，避免跨版本模组冲突）")
+        # 标签缩短，解释文字移到 tooltip：长标签 minHint 892px 会顶宽布局
+        self.isolate_cb = QCheckBox("为该版本使用隔离游戏目录")
+        self.isolate_cb.setToolTip(
+            "默认开启；saves/mods/config 独立存放，避免跨版本模组冲突")
         self.isolate_cb.toggled.connect(self._on_isolate_toggle)
         cv.addWidget(self.isolate_cb)
 

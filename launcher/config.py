@@ -3,7 +3,10 @@
 import json
 import os
 
-_STR_FIELDS = ("java_path", "game_dir", "current_version", "jvm_extra_args", "theme_color", "download_source")
+_STR_FIELDS = ("java_path", "game_dir", "current_version", "jvm_extra_args",
+               "theme_color", "download_source", "theme_mode",
+               "window_size_mode", "process_priority", "ip_preference",
+               "launcher_visibility", "custom_message")
 
 
 class AppConfig:
@@ -20,7 +23,17 @@ class AppConfig:
         self.current_version = ""
         self.memory_gb = 4
         self.jvm_extra_args = ""
-        self.theme_color = "#4A8F72"
+        self.theme_color = "#4C5FE8"
+        self.theme_mode = "light"
+        # ---- 启动选项 ----
+        self.window_size_mode = "default"     # default / maximized / fullscreen / custom
+        self.window_width = 854               # 自定义模式下的游戏窗口宽
+        self.window_height = 480              # 自定义模式下的游戏窗口高
+        self.process_priority = "normal"      # low / normal / high / realtime
+        self.ip_preference = "java"           # java / ipv4 / ipv6
+        self.launcher_visibility = "keep"     # keep / minimize / exit
+        self.custom_message = ""              # 自定义信息（显示在启动器标题栏）
+        self.memory_auto = True               # 内存自动配置
         self.download_source = "bmclapi"
         self.window = {"width": 980, "height": 640, "maximized": False, "x": None, "y": None}
         self.per_version = {}
@@ -78,6 +91,13 @@ class AppConfig:
         v = data.get("auto_isolate")
         if isinstance(v, bool):
             self.auto_isolate = v
+        for key in ("window_width", "window_height"):
+            v = data.get(key)
+            if isinstance(v, int) and not isinstance(v, bool) and 100 <= v <= 16384:
+                setattr(self, key, v)
+        v = data.get("memory_auto")
+        if isinstance(v, bool):
+            self.memory_auto = v
 
     # ---------- save ----------
     def save(self):
@@ -89,6 +109,15 @@ class AppConfig:
             "memory_gb": self.memory_gb,
             "jvm_extra_args": self.jvm_extra_args,
             "theme_color": self.theme_color,
+            "theme_mode": self.theme_mode,
+            "window_size_mode": self.window_size_mode,
+            "window_width": self.window_width,
+            "window_height": self.window_height,
+            "process_priority": self.process_priority,
+            "ip_preference": self.ip_preference,
+            "launcher_visibility": self.launcher_visibility,
+            "custom_message": self.custom_message,
+            "memory_auto": bool(self.memory_auto),
             "download_source": self.download_source,
             "window": dict(self.window),
             "per_version": dict(self.per_version),

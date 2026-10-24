@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import (
     QMessageBox, QCheckBox,
 )
 
+from launcher.ui.theme import ElideLabel
 from launcher.ui.workers import ProcessScanWorker, KillWorker
 
 
@@ -72,12 +73,16 @@ class ProcessPage(QWidget):
         self.table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table.setSelectionMode(QAbstractItemView.SingleSelection)
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.table.setShowGrid(False)
+        self.table.setAlternatingRowColors(True)
+        self.table.setWordWrap(False)
         self.table.verticalHeader().setVisible(False)
         cv.addWidget(self.table, 1)
 
-        self.detail = QLabel("选中一行可查看完整命令行")
+        # 用 ElideLabel：命令行可达数百字符，普通 QLabel 的 minimumSizeHint
+        # 会按不换行全文宽计算，把布局最小宽度顶到几千像素、窗口被撑爆
+        self.detail = ElideLabel("选中一行可查看完整命令行")
         self.detail.setObjectName("subText")
-        self.detail.setWordWrap(True)
         self.table.itemSelectionChanged.connect(self._show_detail)
         cv.addWidget(self.detail)
 
@@ -162,7 +167,9 @@ class ProcessPage(QWidget):
         if not r:
             return
         cl = r.get("cmdline") or ""
-        self.detail.setText(("PID %s ｜ %s" % (r["pid"], cl))[:600] or "（无命令行）")
+        # 全文交给 ElideLabel：超宽自动中间省略，悬停 tooltip 看完整命令
+        self.detail.setText(
+            ("PID %s ｜ %s" % (r["pid"], cl)) if cl else "（无命令行）")
 
     # ---------- 停止 ----------
     def _kill_selected(self):

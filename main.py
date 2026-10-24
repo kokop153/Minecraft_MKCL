@@ -19,7 +19,7 @@ def main():
     app = QApplication(sys.argv)
     app.setApplicationName("MKCL")
     app.setStyle(QStyleFactory.create("Fusion"))
-    app.setFont(QFont("Microsoft YaHei UI", 9))
+    app.setFont(QFont("Microsoft YaHei UI", 10))
 
     from launcher.ui.main_window import AppContext, MainWindow
     ctx = AppContext(BASE_DIR)

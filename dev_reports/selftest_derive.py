@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 """derive_mc_version 二轮修复验证：审查员全部用例 + fabric 官方 id。"""
 import os, sys, io, json
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.environ.setdefault("PYTHONIOENCODING", "utf-8")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")

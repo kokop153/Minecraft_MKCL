@@ -37,6 +37,155 @@ def _is_foreign_natives(path: str) -> bool:
 _natives_lock = threading.Lock()
 
 
+# ---------------- 系统内存 / 启动选项辅助 ----------------
+
+def system_memory_info():
+    """返回 (总内存字节, 可用内存字节)；探测失败时返回 (0, 0)。"""
+    try:
+        import ctypes
+        from ctypes import wintypes
+
+        class MEMORYSTATUSEX(ctypes.Structure):
+            _fields_ = [
+                ("dwLength", wintypes.DWORD),
+                ("dwMemoryLoad", wintypes.DWORD),
+                ("ullTotalPhys", ctypes.c_ulonglong),
+                ("ullAvailPhys", ctypes.c_ulonglong),
+                ("ullTotalPageFile", ctypes.c_ulonglong),
+                ("ullAvailPageFile", ctypes.c_ulonglong),
+                ("ullTotalVirtual", ctypes.c_ulonglong),
+                ("ullAvailVirtual", ctypes.c_ulonglong),
+                ("ullAvailExtendedVirtual", ctypes.c_ulonglong),
+            ]
+
+        st = MEMORYSTATUSEX()
+        st.dwLength = ctypes.sizeof(MEMORYSTATUSEX)
+        if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(st)):
+            return (0, 0)
+        return (int(st.ullTotalPhys), int(st.ullAvailPhys))
+    except Exception:
+        return (0, 0)
+
+
+def auto_memory_gb():
+    """按物理内存自动推导游戏内存（GB）。"""
+    total, _avail = system_memory_info()
+    gb = total / (1024 ** 3) if total else 8.0
+    if gb <= 4:
+        return 1
+    if gb <= 8:
+        return 2
+    if gb <= 16:
+        return 4
+    return 6
+
+
+def max_memory_gb():
+    """自定义内存滑块上限：不低于 8，且不超过物理内存 - 2。"""
+    total, _avail = system_memory_info()
+    gb = int(total / (1024 ** 3)) if total else 16
+    return max(8, gb - 2)
+
+
+# 32 位 JVM 的堆上限约 1.5G（Client VM 实际可用更小），超出即
+# "Invalid maximum heap size" / "Could not create the Java Virtual Machine"
+MAX_HEAP_GB_32BIT = 1
+
+
+def java_probe_exe(java_exe: str) -> str:
+    """能力探测用的 java.exe：javaw.exe 无控制台输出，换同目录 java.exe。"""
+    if os.path.basename(str(java_exe or "")).lower() == "javaw.exe":
+        cand = os.path.join(os.path.dirname(java_exe), "java.exe")
+        if os.path.isfile(cand):
+            return cand
+    return java_exe
+
+
+def java_heap_cap_gb(java_exe: str) -> int:
+    """返回该 Java 的堆上限（GB）；0 = 不限制（64 位或探测失败保守不限制）。"""
+    try:
+        from launcher.java_utils import _probe
+        res = _probe(java_probe_exe(java_exe))
+    except Exception:
+        return 0
+    if not res:
+        return 0
+    return 0 if res[3] else MAX_HEAP_GB_32BIT
+
+
+def effective_heap_gb(java_exe: str, memory_gb: int) -> int:
+    """按所选 Java 的位数钳制游戏内存，返回实际可用的 GB 数。"""
+    n = int(memory_gb)
+    cap = java_heap_cap_gb(java_exe)
+    if cap and n > cap:
+        logging.warning(
+            "游戏内存 %dG 超出所选 Java（32 位）上限，已钳制为 %dG：%s",
+            n, cap, java_exe)
+        return cap
+    return n
+
+
+def validate_jvm_heap(java_exe: str, heap_gb: int) -> None:
+    """启动前干跑 -Xmx 验证；失败抛中文 LauncherError，避免 JVM 弹原生错误框。
+
+    典型场景：32 位 Java 上配了 4G → JVM 直接弹
+    "Could not create the Java Virtual Machine" 的系统对话框。
+    """
+    probe = java_probe_exe(java_exe)
+    n = int(heap_gb)
+    try:
+        proc = subprocess.run(
+            [probe, "-Xmx%dG" % n, "-version"],
+            capture_output=True,
+            text=True,
+            errors="replace",
+            timeout=30,
+            creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
+        )
+    except (OSError, subprocess.SubprocessError) as e:
+        raise LauncherError(
+            "无法运行所选 Java：%s" % e,
+            detail=java_exe + "\n请在设置中重新检测并选择有效的 Java 运行时",
+        )
+    if proc.returncode != 0:
+        lines = (proc.stderr or "").strip().splitlines()
+        detail = lines[0] if lines else ("退出码 %d" % proc.returncode)
+        raise LauncherError(
+            "所选 Java 无法分配 %d GB 内存，JVM 创建失败" % n,
+            detail="%s\n\n常见原因：所选 Java 是 32 位版本（最大仅约 1.5 GB）。"
+                   "请在设置中更换 64 位 Java，或调低游戏内存。" % detail,
+        )
+
+
+def resolve_window_size(mode: str, custom_w: int = 854, custom_h: int = 480):
+    """把窗口大小模式解析为 (width, height, fullscreen)。"""
+    mode = str(mode or "default")
+    if mode == "fullscreen":
+        return (854, 480, True)
+    if mode == "maximized":
+        try:
+            import ctypes
+            w = int(ctypes.windll.user32.GetSystemMetrics(0))
+            h = int(ctypes.windll.user32.GetSystemMetrics(1))
+            if w >= 640 and h >= 480:
+                return (w, h, False)
+        except Exception:
+            pass
+        return (854, 480, False)
+    if mode == "custom":
+        return (max(320, int(custom_w or 854)), max(240, int(custom_h or 480)), False)
+    return (854, 480, False)
+
+
+# Windows 进程优先级类常量
+_PRIORITY_FLAGS = {
+    "low": 0x00004000,       # BELOW_NORMAL_PRIORITY_CLASS
+    "normal": 0x00000020,    # NORMAL_PRIORITY_CLASS
+    "high": 0x00000080,      # HIGH_PRIORITY_CLASS
+    "realtime": 0x00000100,  # REALTIME_PRIORITY_CLASS
+}
+
+
 def _rules_allow(rules, features: Dict[str, bool], os_name: str = "windows") -> bool:
     if not rules:
         return True
@@ -165,6 +314,8 @@ def build_launch_command(
     height: int = 480,
     isolate_dir: bool = False,
     instance_tag: str = "",
+    fullscreen: bool = False,
+    ip_preference: str = "java",
 ) -> dict:
     logging.info("构建启动命令：%s", folder)
     versions = scan_versions(game_dir)
@@ -242,7 +393,9 @@ def build_launch_command(
     )
 
     # ---- JVM 参数 ----
-    n = int(memory_gb)
+    # 按所选 Java 位数钳制内存：32 位 JVM 堆上限约 1.5G，超出会导致
+    # "Could not create the Java Virtual Machine"（系统原生错误框）
+    n = effective_heap_gb(java_path, memory_gb)
     jvm: List[str] = [
         "-Xmx{}G".format(n),
         "-Xms{}G".format(min(2, n)),
@@ -291,6 +444,12 @@ def build_launch_command(
             jvm.extend(shlex.split(jvm_extra, posix=False))
         except ValueError:
             jvm.extend(jvm_extra.split())
+
+    # ---- IP 协议偏好（Java 默认不加参数） ----
+    if ip_preference == "ipv4":
+        jvm.append("-Djava.net.preferIPv4Stack=true")
+    elif ip_preference == "ipv6":
+        jvm.append("-Djava.net.preferIPv6Addresses=true")
 
     # ---- 游戏参数 ----
     asset_index = ((data.get("assetIndex") or {}).get("id")) or ""
@@ -370,7 +529,9 @@ def build_launch_command(
             "版本 json 中没有可用的游戏参数定义", detail="folder=" + folder
         )
 
-    if "--width" not in game_args:
+    if fullscreen:
+        game_args.append("--fullscreen")
+    elif "--width" not in game_args:
         game_args.extend(["--width", str(width), "--height", str(height)])
 
     main_class = str(data.get("mainClass") or "")
@@ -599,6 +760,10 @@ def launch_game(cmd: dict, on_output: Optional[Callable[[str], None]] = None) ->
 
     logging.info("启动游戏进程：java=%s，workdir=%s，参数总数=%d",
                  exe, workdir, len(command))
+    creationflags = 0
+    priority = str(cmd.get("priority") or "normal")
+    if platform.system() == "Windows":
+        creationflags = _PRIORITY_FLAGS.get(priority, 0x00000020)
     try:
         proc = subprocess.Popen(
             command,
@@ -608,6 +773,7 @@ def launch_game(cmd: dict, on_output: Optional[Callable[[str], None]] = None) ->
             text=True,
             encoding="utf-8",
             errors="replace",
+            creationflags=creationflags,
         )
     except (OSError, ValueError) as e:
         raise LauncherError(

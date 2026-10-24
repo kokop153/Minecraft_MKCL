@@ -1,7 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 """复现用户崩溃路径：下载页 _on_collect -> DownloadJob.start(missing) -> 回调完成。"""
 import os, sys, io, time, json, shutil
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.environ.setdefault("PYTHONIOENCODING", "utf-8")
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")

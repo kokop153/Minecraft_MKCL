@@ -8,7 +8,7 @@ import sys
 import time
 import io
 
-ROOT = r"C:\Users\LiXiaoHao\.openclaw-autoclaw\workspace\minecraft-launcher"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GAME_SHOTS = r"F:\.minecraft\versions\xiaohuiche的2b2t.xin整合包\screenshots"
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 user32 = ctypes.windll.user32
